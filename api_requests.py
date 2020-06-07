@@ -37,8 +37,9 @@ def test_candidatelist_post_method():
     r = requests.post(url = complete_url, data = data) 
     
     # extracting response text  
-    pastebin_url = r.text 
-    print("The pastebin URL is:%s"%pastebin_url)
+    data = r.text 
+
+    print("New user added, Details are:%s"%data)
 
 
 def test_candidate_get_method(candidate_id):
@@ -66,9 +67,10 @@ def test_candidate_put_method(candidate_id):
 
     if candidate_id is not None:
         # data to be sent to api 
-        data = {'name':'Ali',
-                'age':'19',
-                'language':'C#'} 
+        # data = {'name':'Ali',
+        #         'age':'19',
+        #         'language':'C#'}
+        data = {'language':'R'}  
         
         complete_url = URL + "candidates_list/" + str(candidate_id)
         
