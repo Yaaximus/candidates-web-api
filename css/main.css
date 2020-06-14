@@ -78,9 +78,51 @@ a {
     text-decoration: none;
 }
 
+.cnc, .ec, .dc, .lac, .fc {
+    color: black;
+    background: lightgray;
+    width: 250px;
+    display: block;
+    border-radius: 20px;
+    padding: 12px 32px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    margin-top: 2px;
+    margin-bottom: 4px;
+    font-size: medium;
+    
+}
+
+.button-container ul li button:hover {
+    background: gray;
+    cursor: pointer;
+}
+
+.button-container ul li button:active {
+    background: gray;
+    cursor: pointer;
+}
+
+.functional-container {
+    background-color: lightgray;
+    width: 885px;
+    height: 222px;
+    margin-top: -268px;
+    margin-bottom: -268px;
+    margin-left: 380px;
+    margin-right: 0px;
+    
+}
+
+.footer-container {
+    margin-top: 19em;
+}
+
 .footer-links-1 {
     text-align: left;
-    margin-left: 8.5%;
+    margin-left: 9.5%;
     max-inline-size: 10em;
     
 }
@@ -94,16 +136,3 @@ a {
     padding: 0.8em 1.2em;
 }
 
-.cnc, .ec, .dc, .lac, .fc {
-    color: black;
-    background: lightgray;
-    width: calc(100%-1em);
-    display: block;
-    border-radius: 20px;
-    padding: 10px 0px;
-}
-
-.button-container ul li a:hover {
-    background: gray;
-    cursor: pointer;
-}

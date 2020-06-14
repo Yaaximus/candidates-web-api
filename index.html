@@ -6,7 +6,9 @@
     <title>candidate-webapp</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
+
     <div class="container">
         <header>
             <img src="images/logo.png" alt="company logo" class="logo">
@@ -23,20 +25,37 @@
             <h5 class="subhead">CRUD functionality for candidates</h5>
         </section>
     </div>
+
     <div class="button-container">
         <ul>
-            <li><a href="#" class="cnc">Create new candidate</a></li>
-            <li><a href="#" class="ec">Edit candidate</a></li>
-            <li><a href="#" class="dc">Delete candidate</a></li>
-            <li><a href="#" class="lac">List all candidate</a></li>
-            <li><a href="#" class="fc">Filter candidate</a></li>
+            <li><button id="cnc_btn" onclick="cnc_button_control()" class="cnc">Create new candidate</button></li>
+            <li><button id="ec_btn" onclick="ec_button_control()" class="cnc">Edit candidate</button></li>
+            <li><button id="dc_btn" onclick="dc_button_control()" class="cnc">Delete candidate</button></li>
+            <li><button id="lac_btn" onclick="lac_button_control()" class="cnc">List all candidate</button></li>
+            <li><button id="fc_btn" onclick="fc_button_control()" class="cnc">Filter candidate</button></li>
         </ul>
     </div>
+
     <div class="functional-container">
         <div class="container">
-
+            <div id="cncDIV" style="display:none">
+                Create new candidate.
+            </div>
+            <div id="ecDIV" style="display:none">
+                Edit candidate.
+            </div>
+            <div id="dcDIV" style="display:none">
+                Delete candidate.
+            </div>
+            <div id="lacDIV" style="display:none">
+                List all candidate.
+            </div>
+            <div id="fcDIV" style="display:none">
+                Filter candidate.
+            </div>
         </div>
     </div>
+
     <footer>
         <div class="footer-container">
             <ul class="footer-links-1">
@@ -48,5 +67,69 @@
             </ul>
         </div>
     </footer>
+
+<script>
+    var cnc_var = document.getElementById("cncDIV");
+    var ec_var = document.getElementById("ecDIV");
+    var dc_var = document.getElementById("dcDIV");
+    var lac_var = document.getElementById("lacDIV");
+    var fc_var = document.getElementById("fcDIV");
+
+    function cnc_button_control() {
+        if (cnc_var.style.display === "none") {
+        cnc_var.style.display = "block";
+        ec_var.style.display = "none";
+        dc_var.style.display = "none";
+        lac_var.style.display = "none";
+        fc_var.style.display = "none";
+        } else {
+        cnc_var.style.display = "none";
+        }
+    }
+    function ec_button_control() {
+        if (ec_var.style.display === "none") {
+        cnc_var.style.display = "none";
+        ec_var.style.display = "block";
+        dc_var.style.display = "none";
+        lac_var.style.display = "none";
+        fc_var.style.display = "none";
+        } else {
+        ec_var.style.display = "none";
+        }
+    }
+    function dc_button_control() {
+        if (dc_var.style.display === "none") {
+        cnc_var.style.display = "none";
+        ec_var.style.display = "none";
+        dc_var.style.display = "block";
+        lac_var.style.display = "none";
+        fc_var.style.display = "none";
+        } else {
+        dc_var.style.display = "none";
+        }
+    }
+    function lac_button_control() {
+        if (lac_var.style.display === "none") {
+        cnc_var.style.display = "none";
+        ec_var.style.display = "none";
+        dc_var.style.display = "none";
+        lac_var.style.display = "block";
+        fc_var.style.display = "none";
+        } else {
+        lac_var.style.display = "none";
+        }
+    }
+    function fc_button_control() {
+        if (fc_var.style.display === "none") {
+        cnc_var.style.display = "none";
+        ec_var.style.display = "none";
+        dc_var.style.display = "none";
+        lac_var.style.display = "none";
+        fc_var.style.display = "block";
+        } else {
+        fc_var.style.display = "none";
+        }
+    }
+</script>
 </body>
 </html>
