@@ -113,7 +113,64 @@ a {
     margin-bottom: -268px;
     margin-left: 380px;
     margin-right: 0px;
-    
+    border-radius: 20px;   
+    padding: 0%;
+}
+
+.c_id{
+    padding: 4px 4px;
+    width: 500px;
+    margin: -8px 4px 4px 4px;
+    text-align: left;
+}
+
+.dc_id{
+    padding: 4px 4px;
+    width: 500px;
+    margin: 4px 4px 4px 4px;
+    text-align: left;
+}
+
+.c_name, .c_age, .c_resume, .c_language{
+    padding: 4px 4px;
+    width: 500px;
+    margin: 4px 4px 4px 4px;
+    text-align: left;
+}
+
+.c_resume_upload {
+    padding: 4px 4px;
+    width: 100px;
+    margin: 4px 4px 4px 125px;
+    cursor: pointer;
+    font-size: small;
+}
+
+.c_submit ,.fc_submit{
+    padding: 4px 4px;
+    width: 60px;
+    margin: 2px 4px 4px 120px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.c_filter{
+    padding: 4px 4px;
+    margin: 4px 4px 4px 4px;
+    width: 450px;
+    text-align: left;
+}
+
+.fc_c_input{
+    width: 50;
+    margin: -28px 100px 0px 0px;
+}
+
+.fc_c_output{
+    width: 150px;
+    padding: 4px 4px;
+    margin: 4px 4px 4px 4px;
+    text-align: left;
 }
 
 .footer-container {

@@ -39,19 +39,90 @@
     <div class="functional-container">
         <div class="container">
             <div id="cncDIV" style="display:none">
-                Create new candidate.
+                <form>
+                    <div class="c_name">
+                        <label>Candidate name :</label>
+                        <input type="text" class="cnc_c_name_input" aria-label="Default" placeholder="Enter-candidate-name">
+                    </div>
+                    <div class="c_age">
+                        <label>Candidate age :</label>
+                        <input type="text" class="cnc_c_age_input" aria-label="Default" placeholder="Enter-candidate-age">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="c_resume">
+                            <label>Attach resume' :</label>
+                            <input type="file" class="cnc_c_resume_input" id="CncCResume">
+                        </div>
+                        <div class="input-group-append">
+                          <span class="c_resume_upload" >Upload</span>
+                        </div>
+                    </div>
+                    <div class="c_language">
+                        <label>Programming Language's :</label>
+                        <input type="text" class="cnc_c_language_input" aria-label="Default" placeholder="Python, Java, C++">
+                    </div>
+                    <button id="cnc_submit_btn" onclick="cnc_submit_button_control()" class="c_submit">Create</button>
+                </form>
             </div>
             <div id="ecDIV" style="display:none">
-                Edit candidate.
+                <form>
+                    <div class="c_id">
+                        <label>Candidate ID :</label>
+                        <input type="number" class="ec_c_id_input" aria-label="Default" placeholder="Enter-candidate-ID">
+                    </div>
+                    <div class="c_name">
+                        <label>Candidate name :</label>
+                        <input type="text" class="ec_c_name_input" aria-label="Default" placeholder="Enter-candidate-name">
+                    </div>
+                    <div class="c_age">
+                        <label>Candidate age :</label>
+                        <input type="text" class="ec_c_age_input" aria-label="Default" placeholder="Enter-candidate-age">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="c_resume">
+                            <label>Attach resume' :</label>
+                            <input type="file" class="ec_c_resume_input" id="EcCResume">
+                        </div>
+                        <div class="input-group-append">
+                          <span class="c_resume_upload" >Upload</span>
+                        </div>
+                    </div>
+                    <div class="c_language">
+                        <label>Programming Language's :</label>
+                        <input type="text" class="ec_c_language_input" aria-label="Default" placeholder="Python, Java, C++">
+                    </div>
+                    <button id="ec_submit_btn" onclick="ec_submit_button_control()" class="c_submit">Edit</button>
+                </form>
             </div>
             <div id="dcDIV" style="display:none">
-                Delete candidate.
+                <form>
+                    <div class="dc_id">
+                        <label>Candidate ID :</label>
+                        <input type="number" class="ec_c_id_input" aria-label="Default" placeholder="Enter-candidate-ID">
+                    </div>
+                    <button id="fc_submit_btn" onclick="dc_submit_button_control()" class="d_submit">Delete</button>
+                </form>
             </div>
             <div id="lacDIV" style="display:none">
                 List all candidate.
             </div>
             <div id="fcDIV" style="display:none">
-                Filter candidate.
+                <div class="c_filter input-group mb-3">
+                    <label class="input-group-text" for="inputGroupSelect01">Search by :</label>
+                    <select class="custom-select" id="inputGroupSelect01">
+                      <option selected>Choose...</option>
+                      <option value="1">ID</option>
+                      <option value="2">age</option>
+                      <option value="3">language</option>
+                    </select>
+                    <input type="text" class="fc_c_input" aria-label="Default" placeholder="Enter-here">
+                </div>
+                <button id="fc_submit_btn" onclick="fc_submit_button_control()" class="fc_submit">Filter</button>         
+                <form>
+                    <div class="fc_c_output">
+                        <output>Results of Filter</output>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
